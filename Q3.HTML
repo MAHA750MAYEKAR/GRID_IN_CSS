@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 3</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 80px 100px ;
+            grid-auto-rows: 170px;
+            
+        }
+        .child{
+            background-color: rgb(240, 175, 95);
+            border: 1px solid red;
+            border-radius: 5px;
+            margin: 0.2cm;
+
+        }
+        p{
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <p><i>The grid-auto-rows property sets a size for the rows in a grid container.
+        This property affects only rows with the size not set
+        The grid-auto-columns property sets a size for the columns in a grid container.
+        This property affects only columns with the size not set.</i></p>
+     <br>
+
+    <div class="parent">
+        <div class="child">box1---IT HAS MENTIONED grid-template-rows i.e 80px </div>
+        <div class="child">box2---IT HAS MENTIONED grid-template-rows i.e 80px </div>
+        <div class="child">box3---IT HAS MENTIONED grid-template-rows i.e 80px </div>
+        <div class="child">box4---IT HAS MENTIONED grid-template-rows i.e 100px </div>
+        <div class="child">box5---IT HAS MENTIONED grid-template-rows i.e 100px</div>
+        <div class="child">box6---IT HAS MENTIONED grid-template-rows i.e 100px</div>
+        <div class="child">box7- auto sized  to 170px </div>
+        <div class="child">box8-- auto sized  to 170px </div>
+        <div class="child">box9- auto sized  to 170px </div>
+        <div class="child">box10- auto sized  to 170px </div>
+    </div>
+    
+</body>
+</html>

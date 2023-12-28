@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        .child{
+            background-color: blanchedalmond;
+            padding: 1px;
+            margin: 1px;
+            border-radius: 2px;
+        }
+        .child:nth-child(1){
+            grid-column: 1/span 2;
+        }
+        .child:nth-child(2){
+            grid-column: 3;
+         grid-row: 1/3;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">A</div>
+        <div class="child">B</div>
+        <div class="child">C</div>
+        <div class="child">D</div>
+    </div>
+    
+</body>
+</html>

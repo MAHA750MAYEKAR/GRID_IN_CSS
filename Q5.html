@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 5</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        grid-template-columns:  100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        height: 50%;
+        width: 50%;
+        margin: 0.5cm;
+        background-color: rgb(120, 177, 227);
+        border: 1px solid rgb(9, 9, 86);
+        /* justify-items: center; */
+    }
+    .parent2 {
+        display: grid;
+        grid-template-columns:  100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        height: 50%;
+        width: 50%;
+        margin: 0.5cm;
+        background-color: rgb(232, 56, 174);
+        border: 1px solid rgb(37, 32, 35);
+         justify-items: center; 
+    }
+    .child,.child1{
+        background-color: blueviolet;
+        margin: 3px;
+        border: 1px solid rgb(9, 9, 86);
+    }
+    .child:nth-child(3){
+        justify-self:center;
+    
+    }
+    .child:nth-child(5){
+        justify-self:center;
+    
+    }
+    .child:nth-child(7){
+        justify-self:center;
+    
+    }
+</style>
+<body>
+    <h1><u>CSS justify-self Property</u></h1>
+    <p><i><b>The justify-self property aligns a grid item within its grid cell in the inline direction.</b></i></p>
+    <div class="parent">
+        <div class="child">item1</div>
+        <div class="child">item2</div>
+        <div class="child">item3</div>
+        <div class="child">item4</div>
+        <div class="child">item5</div>
+        <div class="child">item6</div>
+        <div class="child">item7</div>
+        <div class="child">item8</div>
+    </div>
+
+    <h1><u>CSS justify-items Property</u></h1>
+    <p><i><b>The justify-items property is set on the grid container to give child elements (grid items) alignment in the inline direction.</b></i></p>
+    <div class="parent2">
+        <div class="child1">item1</div>
+        <div class="child1">item2</div>
+        <div class="child1">item3</div>
+        <div class="child1">item4</div>
+        <div class="child1">item5</div>
+        <div class="child1">item6</div>
+        <div class="child1">item7</div>
+        <div class="child1">item8</div>
+    </div>
+    
+</body>
+</html>
